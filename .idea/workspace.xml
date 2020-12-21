@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="installed material-ui">
-      <change afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/navbar.scss" afterDir="false" />
+    <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="integrated scss, created Layout and Navbar model">
+      <change afterPath="$PROJECT_DIR$/src/css/colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608566827359</updated>
-      <workItem from="1608566832484" duration="1961000" />
+      <workItem from="1608566832484" duration="6826000" />
     </task>
     <task id="LOCAL-00001" summary="installed material-ui">
       <created>1608567790481</created>
@@ -61,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608567790481</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="integrated scss, created Layout and Navbar model">
+      <created>1608568840984</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608568840984</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="installed material-ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="installed material-ui" />
+    <MESSAGE value="integrated scss, created Layout and Navbar model" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrated scss, created Layout and Navbar model" />
   </component>
 </project>

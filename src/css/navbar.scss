@@ -1,5 +1,18 @@
+@import 'colors.scss';
+
 .navbar{
-  height: 46px;
+  height: 54px;
   width: 100%;
-  background-color: black;
+  background-color: $black;
+}
+
+.menu-icon{
+  color: $white;
+  font-size: 42px !important;
+  float: right;
+  padding: 6px 12px;
+}
+
+.logo{
+  padding: 14px;
 }
