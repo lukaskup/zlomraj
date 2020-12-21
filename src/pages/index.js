@@ -1,10 +1,11 @@
 import * as React from "react"
-import Button from '@material-ui/core/Button';
+import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 
 const IndexPage = () => {
-  return <div>
-    <Button>Test</Button>
-  </div>
+  return <Layout>
+    siema
+  </Layout>
 }
 
 export default IndexPage

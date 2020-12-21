@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="">
+    <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="installed material-ui">
+      <change afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
@@ -25,7 +28,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my-gatsby-project" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -49,8 +52,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608566827359</updated>
-      <workItem from="1608566832484" duration="781000" />
+      <workItem from="1608566832484" duration="1961000" />
     </task>
+    <task id="LOCAL-00001" summary="installed material-ui">
+      <created>1608567790481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608567790481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -66,5 +77,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="installed material-ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="installed material-ui" />
   </component>
 </project>
