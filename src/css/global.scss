@@ -11,3 +11,18 @@ body{
   font-family: 'Roboto', sans-serif;
   color: $white;
 }
+
+.button{
+  border-radius: 21px !important;
+  border: 1px solid $white !important;
+  background-color: $black !important;
+  color: $white !important;
+  text-align: center !important;
+  height: 40px !important;
+  width: 100%;
+
+  &.active{
+    color: $black !important;
+    background-color: $white !important;
+  }
+}
