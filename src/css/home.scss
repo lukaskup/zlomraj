@@ -29,3 +29,16 @@
     z-index: 0;
   }
 }
+
+.content-switcher{
+  margin-top:15px
+}
+
+//xl
+@media only screen and (min-width: 1200px) {
+  .about-section{
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

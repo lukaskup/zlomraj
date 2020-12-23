@@ -10,16 +10,19 @@
   color: $white;
   font-size: 42px !important;
   float: right;
-  padding: 6px 12px;
+  padding: 6px 0px;
 }
 
+
+
 .logo{
-  padding: 14px;
+  padding: 14px 2px;
 }
 
 .drawer{
   position: absolute;
   top: 54px;
+  left: 0px;
   background: #242424;
   width: calc(100vw - 24px);
   height: calc(100vh - 78px);
@@ -34,3 +37,6 @@
     font-weight: 500;
   }
 }
+
+
+//TODO propozycja na navbar menu icon https://codepen.io/designcouch/pen/Atyop

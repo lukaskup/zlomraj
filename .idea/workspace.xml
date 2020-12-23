@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="did some work on homepage">
+      <change afterPath="$PROJECT_DIR$/src/components/Blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pricing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/pricing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/junk.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
@@ -29,6 +35,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\praca\zlecenia\zlomraj\src\images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="develop" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -51,6 +62,7 @@
       <updated>1608566827359</updated>
       <workItem from="1608566832484" duration="7865000" />
       <workItem from="1608592743369" duration="6753000" />
+      <workItem from="1608738827343" duration="9966000" />
     </task>
     <task id="LOCAL-00001" summary="installed material-ui">
       <created>1608567790481</created>
