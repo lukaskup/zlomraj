@@ -90,3 +90,30 @@ body{
     max-width: 1100px;
   }
 }
+
+//custom material ui styles
+.MuiOutlinedInput-notchedOutline{
+  border-color: $white !important;
+  border-width: 2px;
+
+  span{
+    color: $white;
+  }
+}
+
+.MuiFormControl-root{
+  label{
+    color: $white !important;
+    z-index: -1;
+  }
+
+  .MuiSelect-root{
+    color: $white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .MuiSvgIcon-root{
+    color: $white;
+  }
+}

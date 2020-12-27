@@ -9,7 +9,6 @@ import Blog from "../components/Blog";
 const IndexPage = () => {
 
   const [activeContent, setActiveContent] = useState("pricing");
-  console.log(activeContent)
   return <Layout>
       <div className={"about-section"}>
         <div className={"content-container"}>
@@ -30,10 +29,10 @@ const IndexPage = () => {
               <Button className={`button${activeContent === "pricing" ? " active" : ""}`} onClick={() => setActiveContent("pricing")}>CENNIK</Button>
             </Grid>
             <Grid item xs={4}>
-              <Button className={`button${activeContent === "contact" ? " active" : ""}`} onClick={() => setActiveContent("contact")}>DOJAZD</Button>
+              <Button className={`button${activeContent === "blog" ? " active" : ""}`} onClick={() => setActiveContent("blog")}>OGŁOSZENIA</Button>
             </Grid>
             <Grid item xs={4}>
-              <Button className={`button${activeContent === "blog" ? " active" : ""}`} onClick={() => setActiveContent("blog")}>OGŁOSZENIA</Button>
+              <Button className={`button${activeContent === "contact" ? " active" : ""}`} onClick={() => setActiveContent("contact")}>KONTAKT</Button>
             </Grid>
           </Grid>
         </div>

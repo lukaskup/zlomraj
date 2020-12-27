@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="did some work on homepage">
-      <change afterPath="$PROJECT_DIR$/src/components/Blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Pricing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/pricing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/junk.jpg" afterDir="false" />
+    <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pricing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/pricing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pricing.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +59,8 @@
       <updated>1608566827359</updated>
       <workItem from="1608566832484" duration="7865000" />
       <workItem from="1608592743369" duration="6753000" />
-      <workItem from="1608738827343" duration="9966000" />
+      <workItem from="1608738827343" duration="10210000" />
+      <workItem from="1608993102341" duration="8732000" />
     </task>
     <task id="LOCAL-00001" summary="installed material-ui">
       <created>1608567790481</created>
@@ -85,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608574816259</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="created Blog and Pricing components, did some responsivness work">
+      <created>1608756202993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608756202993</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +112,7 @@
     <MESSAGE value="installed material-ui" />
     <MESSAGE value="integrated scss, created Layout and Navbar model" />
     <MESSAGE value="did some work on homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="did some work on homepage" />
+    <MESSAGE value="created Blog and Pricing components, did some responsivness work" />
+    <option name="LAST_COMMIT_MESSAGE" value="created Blog and Pricing components, did some responsivness work" />
   </component>
 </project>

@@ -3,6 +3,7 @@ import * as React from "react"
 import "../css/global.scss";
 import Navbar from "./Navbar";
 import {Helmet} from "react-helmet";
+import Footer from "./Footer";
 
 const Layout = (props) => {
     return <div>
@@ -11,6 +12,7 @@ const Layout = (props) => {
         </Helmet>
         <Navbar/>
         {props.children}
+        <Footer/>
     </div>
 }
 

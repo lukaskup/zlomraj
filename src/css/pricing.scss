@@ -1,2 +1,24 @@
 @import 'colors.scss';
 
+.pricing-table {
+  border: 1px solid $white;
+  margin-top: 20px;
+  border-radius: 4px;
+  .pricing-table-item {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $white;
+    &:nth-child(1){
+      border-right: 1px solid $white;
+    }
+  }
+
+  .pricing-table-row{
+    &:nth-last-child(1){
+      .pricing-table-item{
+        border-bottom: none;
+      }
+    }
+  }
+}
