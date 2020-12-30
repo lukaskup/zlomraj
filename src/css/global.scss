@@ -2,6 +2,7 @@
 
 html{
   padding: 0;
+  overflow-x: hidden;
 }
 
 body{
@@ -10,6 +11,7 @@ body{
   background-color: $black;
   font-family: 'Roboto', sans-serif;
   color: $white;
+  overflow-x: hidden;
 }
 
 .button{
@@ -31,6 +33,10 @@ body{
   max-width: 100vw;
   margin-left: auto;
   margin-right: auto;
+
+  &.max-width{
+    max-width: 100%;
+  }
 }
 
 .content-container{
@@ -88,6 +94,9 @@ body{
 
   .container{
     max-width: 1100px;
+    &.max-width{
+      max-width: 1100px;
+    }
   }
 }
 
@@ -116,4 +125,8 @@ body{
   .MuiSvgIcon-root{
     color: $white;
   }
+}
+
+.disable-scroll{
+  overflow:hidden;
 }

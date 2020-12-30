@@ -6,11 +6,11 @@ import {Grid} from "@material-ui/core";
 const Footer = () => {
 
     return <div className={"footer"}>
-        <div className={"map"}>Mapa</div>
-        <div className={"info"}>
+        <div className={"map container max-width"}>Mapa</div>
+        <div className={"info container"}>
             <Grid container>
                 <Grid item xs={12}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="167" height="24" viewBox="0 0 167 24" className={"logo"}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="143" height="24" viewBox="0 0 143 24" className={"logo"}>
                         <g id="Group_5" data-name="Group 5" transform="translate(-6 -16)">
                             <text id="ZŁOMRAJ" transform="translate(63 18)" fill="#dcdcdc" font-size="18" font-family="LibreBaskerville-Regular, Libre Baskerville"><tspan x="0" y="17">ZŁOMRAJ</tspan></text>
                             <rect id="Rectangle_1" data-name="Rectangle 1" width="48" height="24" transform="translate(6 16)" fill="#dcdcdc"/>

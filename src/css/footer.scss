@@ -5,15 +5,20 @@
   text-align: center;
   background-color: #fffecf;
   color: black;
-  padding-top: 50px;
-  height: 80px;
+  padding-top: 70px;
+  height: 100px;
 }
 
 .footer{
   text-align: center;
-
   svg{
     margin-top:20px;
+  }
+
+  .info{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .item{

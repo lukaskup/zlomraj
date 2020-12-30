@@ -5,6 +5,7 @@ import '../css/home.scss';
 import {Button, Grid} from "@material-ui/core";
 import Pricing from "../components/Pricing";
 import Blog from "../components/Blog";
+import Contact from "../components/Contact";
 
 const IndexPage = () => {
 
@@ -38,7 +39,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div className={"container"}>
-        {activeContent === "pricing" ? <Pricing isPagination={true}/> : (activeContent === "contact" ? "" : <Blog isPagination={true}/>)}
+        {activeContent === "pricing" ? <Pricing isPagination={true}/> : (activeContent === "contact" ? <Contact/> : <Blog isPagination={true}/>)}
       </div>
   </Layout>
 }

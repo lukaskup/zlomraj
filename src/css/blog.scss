@@ -1,0 +1,30 @@
+@import 'colors.scss';
+
+
+.blog-container{
+  margin-bottom: 40px;
+  .post{
+    margin-top: 40px;
+    .date{
+      text-align: center;
+      .month{
+        font-weight: 700;
+        font-size: 13px;
+      }
+      .year{
+
+      }
+    }
+
+    .content{
+      width: calc(100% - 50px);
+      .title{
+        font-size: 22px;
+        font-weight: 700;
+      }
+      .description{
+
+      }
+    }
+  }
+}
