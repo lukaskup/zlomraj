@@ -1,0 +1,18 @@
+@import "colors.scss";
+
+.gallery{
+  h2{
+    text-align: center;
+  }
+
+  .item{
+    height: 170px;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-size: cover;
+    border:1px solid $white;
+    border-radius: 5px;
+  }
+}
