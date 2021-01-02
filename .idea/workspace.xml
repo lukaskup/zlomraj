@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/gallery.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/galeria.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/gallery/junk.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/gallery.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/galeria.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/galeria.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +27,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/content/gallery" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\praca\zlecenia\zlomraj\src\content\gallery" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\praca\zlecenia\zlomraj\src\content" />
       <recent name="E:\praca\zlecenia\zlomraj\src\images" />
     </key>
   </component>
@@ -58,7 +66,8 @@
       <workItem from="1608738827343" duration="10210000" />
       <workItem from="1608993102341" duration="8882000" />
       <workItem from="1609342136950" duration="11820000" />
-      <workItem from="1609404935755" duration="5337000" />
+      <workItem from="1609404935755" duration="5388000" />
+      <workItem from="1609533482125" duration="8795000" />
     </task>
     <task id="LOCAL-00001" summary="installed material-ui">
       <created>1608567790481</created>
@@ -102,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609355398403</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="some gallery work">
+      <created>1609410799750</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609410799750</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +143,7 @@
     <MESSAGE value="created Blog and Pricing components, did some responsivness work" />
     <MESSAGE value="did pricing components (html/css only), did footer with no google map api" />
     <MESSAGE value="did Contact and Blog components" />
-    <option name="LAST_COMMIT_MESSAGE" value="did Contact and Blog components" />
+    <MESSAGE value="some gallery work" />
+    <option name="LAST_COMMIT_MESSAGE" value="some gallery work" />
   </component>
 </project>

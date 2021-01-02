@@ -26,7 +26,18 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-material-ui"
+    "gatsby-plugin-material-ui",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(`${__dirname}/src/images`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`
   ],
 };
 
