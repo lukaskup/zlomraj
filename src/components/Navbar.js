@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import '../css/navbar.scss';
+import '../css/global.scss';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
@@ -38,13 +39,15 @@ const Navbar = () => {
                 disablePageScroll(true)
             }}/>}
             <div className={"drawer"} hidden={!isDrawerOpen}>
-                <Link to="/">Strona główna</Link>
-                <Link to="/">Cennik</Link>
-                <Link to="/">Ogłoszenia</Link>
-                <Link to="/">Galeria</Link>
-                <Link to="/">O nas</Link>
-                <Link to="/">Do pobrania</Link>
-                <Link to="/">Kontakt</Link>
+                <div className={"container"}>
+                    <Link to="/">Strona główna</Link>
+                    <Link to="/">Cennik</Link>
+                    <Link to="/">Ogłoszenia</Link>
+                    <Link to="/">Galeria</Link>
+                    <Link to="/">O nas</Link>
+                    <Link to="/">Do pobrania</Link>
+                    <Link to="/">Kontakt</Link>
+                </div>
             </div>
         </div>
     </div>
