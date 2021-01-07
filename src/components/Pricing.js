@@ -1,10 +1,12 @@
-import * as React from "react"
-
+import * as React from "react";
+import Axios from "axios";
 import "../css/global.scss";
 import "../css/pricing.scss";
 import {Button, FormControl, Grid, InputLabel, MenuItem, Select, Typography} from "@material-ui/core";
+import config from "../../config";
 
 const categories = [
+    'ZŁOM STALI NIERDZEWNEJ',
     'Stal 1',
     'Stal 2',
     'Stal 3',
@@ -23,45 +25,68 @@ const values = [
     {'name': 'stal 7', 'price': "0,50 zł"}
 ]
 
-const Pricing = (props) => {
+class Pricing extends React.Component {
+    constructor(props) {
+        super(props);
 
-    const [activeCategory, setActiveCategory] = React.useState('Stal 1');
+        this.state = {
+            isLoading: false,
+            pricingCategories: [],
+            pricingItems: [],
+            activeCategory: ""
+        }
+    }
 
-    return <div className={"pricing"}>
-        <FormControl variant="outlined" style={{"marginTop": "20px"}}>
-            <InputLabel id="demo-simple-select-outlined-label">Kategoria</InputLabel>
-            <Select
-                labelId="demo-simple-select-outlined-label"
-                id="demo-simple-select-outlined"
-                value={activeCategory}
-                onChange={(e) => setActiveCategory(e.target.value)}
-                label="Kategoria"
-                className={"category-select"}
-            >
-                {categories.map((value) => <MenuItem value={value}>{value}</MenuItem>)}
-            </Select>
-        </FormControl>
-        <div className={"pricing-table"}>
-            <Grid container>
-                <Grid item xs={6} className={"pricing-table-item"}>
-                    <span><b>NAZWA</b></span>
-                </Grid>
-                <Grid item xs={6} className={"pricing-table-item"}>
-                    <span><b>CENA NETTO/KG</b></span>
-                </Grid>
-                {values.map((value) =>
-                    <Grid container className={"pricing-table-row"}>
-                        <Grid item xs={6} className={"pricing-table-item"}>
-                            <span>{value.name}</span>
-                        </Grid>
-                        <Grid item xs={6} className={"pricing-table-item"}>
-                            <span>{value.price}</span>
-                        </Grid>
+    componentDidMount() {
+        this.setState({isLoading: true}, () => {
+            Axios.get(`${config.apiUrl}&content_type=pricingCategory`).then((res) => {
+                this.setState({pricingCategories: res.data.items.map((item) => item.fields), activeCategory: res.data.items[0].fields.name}, () => {
+                    Axios.get(`${config.apiUrl}&content_type=pricing`).then((res) => {
+                        this.setState({pricingItems: res.data.items.map((item) => item.fields), isLoading: false});
+                    })
+                });
+            });
+        })
+    }
+
+    render() {
+        console.log(this.state);
+        return <div className={"pricing"}>
+            <FormControl variant="outlined" style={{"marginTop": "20px"}}>
+                <InputLabel id="demo-simple-select-outlined-label">Kategoria</InputLabel>
+                <Select
+                    labelId="demo-simple-select-outlined-label"
+                    id="demo-simple-select-outlined"
+                    value={this.state.activeCategory}
+                    onChange={(e) => this.setState({activeCategory: "ZŁOM STALI NIERDZEWNEJ"})}
+                    label="Kategoria"
+                    className={"category-select"}
+                >
+                    {categories.map((value) => <MenuItem value={value}>{value}</MenuItem>)}
+                </Select>
+            </FormControl>
+            <div className={"pricing-table"}>
+                <Grid container>
+                    <Grid item xs={6} className={"pricing-table-item"}>
+                        <span><b>NAZWA</b></span>
                     </Grid>
-                )}
-            </Grid>
+                    <Grid item xs={6} className={"pricing-table-item"}>
+                        <span><b>CENA NETTO/KG</b></span>
+                    </Grid>
+                    {values.map((value) =>
+                        <Grid container className={"pricing-table-row"}>
+                            <Grid item xs={6} className={"pricing-table-item"}>
+                                <span>{value.name}</span>
+                            </Grid>
+                            <Grid item xs={6} className={"pricing-table-item"}>
+                                <span>{value.price}</span>
+                            </Grid>
+                        </Grid>
+                    )}
+                </Grid>
+            </div>
         </div>
-    </div>
+    }
 }
 
 export default Pricing

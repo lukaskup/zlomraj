@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/content/gallery/junk.jpg" afterDir="false" />
+    <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="some gallery work">
+      <change afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/gallery.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/galeria.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/galeria.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pricing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/blog.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/content/gallery" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="E:\JetBrains\WebStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -67,7 +68,9 @@
       <workItem from="1608993102341" duration="8882000" />
       <workItem from="1609342136950" duration="11820000" />
       <workItem from="1609404935755" duration="5388000" />
-      <workItem from="1609533482125" duration="8795000" />
+      <workItem from="1609533482125" duration="8954000" />
+      <workItem from="1609771296499" duration="5596000" />
+      <workItem from="1610018383952" duration="4603000" />
     </task>
     <task id="LOCAL-00001" summary="installed material-ui">
       <created>1608567790481</created>
@@ -118,7 +121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609410799750</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="some gallery work">
+      <created>1609556282615</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609556282615</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gatsby config fix">
+      <created>1609773301254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609773301254</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +161,7 @@
     <MESSAGE value="did pricing components (html/css only), did footer with no google map api" />
     <MESSAGE value="did Contact and Blog components" />
     <MESSAGE value="some gallery work" />
-    <option name="LAST_COMMIT_MESSAGE" value="some gallery work" />
+    <MESSAGE value="gatsby config fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="gatsby config fix" />
   </component>
 </project>

@@ -18,6 +18,7 @@
   "dependencies": {
     "@browniebroke/gatsby-image-gallery": "^4.0.2",
     "@material-ui/styles": "^4.11.2",
+    "axios": "^0.21.1",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-google-analytics": "^2.8.0",
