@@ -1,29 +1,7 @@
 import * as React from "react";
-import Axios from "axios";
 import "../css/global.scss";
 import "../css/pricing.scss";
-import {Button, FormControl, Grid, InputLabel, MenuItem, Select, Typography} from "@material-ui/core";
-import config from "../../config";
-
-const categories = [
-    'ZŁOM STALI NIERDZEWNEJ',
-    'Stal 1',
-    'Stal 2',
-    'Stal 3',
-    'Stal 4',
-    'Stal 5',
-    'Stal 6',
-];
-
-const values = [
-    {'name': 'stal 1', 'price': "0,70 zł"},
-    {'name': 'stal 2', 'price': "0,80 zł"},
-    {'name': 'stal 3', 'price': "0,90 zł"},
-    {'name': 'stal 4', 'price': "0,20 zł"},
-    {'name': 'stal 5', 'price': "0,30 zł"},
-    {'name': 'stal 6', 'price': "0,40 zł"},
-    {'name': 'stal 7', 'price': "0,50 zł"}
-]
+import {FormControl, Grid, InputLabel, MenuItem, Select} from "@material-ui/core";
 
 class Pricing extends React.Component {
     constructor(props) {
@@ -31,38 +9,27 @@ class Pricing extends React.Component {
 
         this.state = {
             isLoading: false,
-            pricingCategories: [],
-            pricingItems: [],
-            activeCategory: ""
+            activeCategory: {
+                "id": "2C9RaHhXBi4H6DqnK2eGXm",
+                "name": "ZŁOM STALI NIERDZEWNEJ"
+            }
         }
     }
 
-    componentDidMount() {
-        this.setState({isLoading: true}, () => {
-            Axios.get(`${config.apiUrl}&content_type=pricingCategory`).then((res) => {
-                this.setState({pricingCategories: res.data.items.map((item) => item.fields), activeCategory: res.data.items[0].fields.name}, () => {
-                    Axios.get(`${config.apiUrl}&content_type=pricing`).then((res) => {
-                        this.setState({pricingItems: res.data.items.map((item) => item.fields), isLoading: false});
-                    })
-                });
-            });
-        })
-    }
-
     render() {
-        console.log(this.state);
+        console.log(this.props.pricingCategories.map((value) => <MenuItem value={value.name}>{value.name}</MenuItem>))
         return <div className={"pricing"}>
             <FormControl variant="outlined" style={{"marginTop": "20px"}}>
                 <InputLabel id="demo-simple-select-outlined-label">Kategoria</InputLabel>
                 <Select
                     labelId="demo-simple-select-outlined-label"
                     id="demo-simple-select-outlined"
-                    value={this.state.activeCategory}
-                    onChange={(e) => this.setState({activeCategory: "ZŁOM STALI NIERDZEWNEJ"})}
+                    value={this.state.activeCategory.name}
+                    onChange={(e) => this.setState({activeCategory: this.props.pricingCategories.map()})}
                     label="Kategoria"
                     className={"category-select"}
                 >
-                    {categories.map((value) => <MenuItem value={value}>{value}</MenuItem>)}
+                    {this.props.pricingCategories.map((value) => <MenuItem value={value.name} id={value.id}>{value.name}</MenuItem>)}
                 </Select>
             </FormControl>
             <div className={"pricing-table"}>
@@ -73,13 +40,13 @@ class Pricing extends React.Component {
                     <Grid item xs={6} className={"pricing-table-item"}>
                         <span><b>CENA NETTO/KG</b></span>
                     </Grid>
-                    {values.map((value) =>
+                    {this.props.pricingItems.filter(x => x.category.sys.id === this.state.activeCategory.id).map((value) =>
                         <Grid container className={"pricing-table-row"}>
                             <Grid item xs={6} className={"pricing-table-item"}>
                                 <span>{value.name}</span>
                             </Grid>
                             <Grid item xs={6} className={"pricing-table-item"}>
-                                <span>{value.price}</span>
+                                <span>{value.price.toFixed(2)} zł</span>
                             </Grid>
                         </Grid>
                     )}

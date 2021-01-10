@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import * as React from "react";
 import Layout from "../components/Layout";
 
 import '../css/home.scss';
@@ -6,11 +6,41 @@ import {Button, Grid} from "@material-ui/core";
 import Pricing from "../components/Pricing";
 import Blog from "../components/Blog";
 import Contact from "../components/Contact";
+import Axios from "axios";
+import config from "../../config";
 
-const IndexPage = () => {
+class IndexPage extends React.Component {
 
-  const [activeContent, setActiveContent] = useState("pricing");
-  return <Layout>
+  constructor(props) {
+    super(props);
+    this.state = {
+      pricingCategories: [],
+      pricingItems: [],
+      isPricingLoading: false,
+      activeContent: "pricing"
+    }
+  }
+
+  componentDidMount() {
+    this.setState({isPricingLoading: true}, () => {
+      Axios.get(`${config.apiUrl}&content_type=pricingCategory`).then((res) => {
+        let pricingCategories = res.data.items.map((item) => {
+          return {
+            id: item.sys.id,
+            name: item.fields.name
+          }
+        });
+        this.setState({pricingCategories: pricingCategories, activeCategory: pricingCategories[0]}, () => {
+          Axios.get(`${config.apiUrl}&content_type=pricing`).then((res) => {
+            this.setState({pricingItems: res.data.items.map((item) => item.fields), isPricingLoading: false});
+          })
+        });
+      });
+    });
+  }
+
+  render() {
+    return <Layout>
       <div className={"about-section"}>
         <div className={"content-container"}>
           <h2>O FIRMIE</h2>
@@ -27,21 +57,26 @@ const IndexPage = () => {
         <div className={"container"}>
           <Grid container spacing={1}>
             <Grid item xs={4}>
-              <Button className={`button${activeContent === "pricing" ? " active" : ""}`} onClick={() => setActiveContent("pricing")}>CENNIK</Button>
+              <Button className={`button${this.state.activeContent === "pricing" ? " active" : ""}`}
+                      onClick={() => this.setState({activeContent: "pricing"})}>CENNIK</Button>
             </Grid>
             <Grid item xs={4}>
-              <Button className={`button${activeContent === "blog" ? " active" : ""}`} onClick={() => setActiveContent("blog")}>OGŁOSZENIA</Button>
+              <Button className={`button${this.state.activeContent === "blog" ? " active" : ""}`}
+                      onClick={() => this.setState({activeContent: "blog"})}>OGŁOSZENIA</Button>
             </Grid>
             <Grid item xs={4}>
-              <Button className={`button${activeContent === "contact" ? " active" : ""}`} onClick={() => setActiveContent("contact")}>KONTAKT</Button>
+              <Button className={`button${this.state.activeContent === "contact" ? " active" : ""}`}
+                      onClick={() => this.setState({activeContent: "contact"})}>KONTAKT</Button>
             </Grid>
           </Grid>
         </div>
       </div>
       <div className={"container"}>
-        {activeContent === "pricing" ? <Pricing isPagination={true}/> : (activeContent === "contact" ? <Contact/> : <Blog isPagination={true}/>)}
+        {this.state.activeContent === "pricing" ? <Pricing isPagination={true} pricingCategories={this.state.pricingCategories} pricingItems={this.state.pricingItems}/> : (this.state.activeContent === "contact" ? <Contact/> :
+            <Blog isPagination={true}/>)}
       </div>
-  </Layout>
+    </Layout>
+  }
 }
 
-export default IndexPage
+export default IndexPage;
