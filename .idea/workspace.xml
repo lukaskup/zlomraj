@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/cennik.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pricing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
@@ -67,7 +68,8 @@
       <workItem from="1609533482125" duration="8954000" />
       <workItem from="1609771296499" duration="5596000" />
       <workItem from="1610018383952" duration="4639000" />
-      <workItem from="1610274640606" duration="3747000" />
+      <workItem from="1610274640606" duration="7553000" />
+      <workItem from="1610375578848" duration="1885000" />
     </task>
     <task id="LOCAL-00001" summary="installed material-ui">
       <created>1608567790481</created>
@@ -139,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610037032723</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="pricing on index page finished">
+      <created>1610278476619</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610278476619</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +176,7 @@
     <MESSAGE value="some gallery work" />
     <MESSAGE value="gatsby config fix" />
     <MESSAGE value="some contentful api work, added config.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="some contentful api work, added config.js" />
+    <MESSAGE value="pricing on index page finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="pricing on index page finished" />
   </component>
 </project>

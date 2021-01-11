@@ -10,14 +10,13 @@ class Pricing extends React.Component {
         this.state = {
             isLoading: false,
             activeCategory: {
-                "id": "2C9RaHhXBi4H6DqnK2eGXm",
-                "name": "ZŁOM STALI NIERDZEWNEJ"
+                "id": "01vBxgNLJxQniupaD9nCyT",
+                "name": "ZŁOM STALOWY"
             }
         }
     }
 
     render() {
-        console.log(this.props.pricingCategories.map((value) => <MenuItem value={value.name}>{value.name}</MenuItem>))
         return <div className={"pricing"}>
             <FormControl variant="outlined" style={{"marginTop": "20px"}}>
                 <InputLabel id="demo-simple-select-outlined-label">Kategoria</InputLabel>
@@ -25,7 +24,13 @@ class Pricing extends React.Component {
                     labelId="demo-simple-select-outlined-label"
                     id="demo-simple-select-outlined"
                     value={this.state.activeCategory.name}
-                    onChange={(e) => this.setState({activeCategory: this.props.pricingCategories.map()})}
+                    onChange={(e) => {
+                        let category = this.props.pricingCategories.find(x => x.name == e.target.value)
+                        this.setState({activeCategory: {
+                            id: category.id,
+                            name: category.name
+                        }})
+                    }}
                     label="Kategoria"
                     className={"category-select"}
                 >
@@ -46,7 +51,7 @@ class Pricing extends React.Component {
                                 <span>{value.name}</span>
                             </Grid>
                             <Grid item xs={6} className={"pricing-table-item"}>
-                                <span>{value.price.toFixed(2)} zł</span>
+                                <span>{value.price} zł</span>
                             </Grid>
                         </Grid>
                     )}

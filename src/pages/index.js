@@ -32,12 +32,15 @@ class IndexPage extends React.Component {
         });
         this.setState({pricingCategories: pricingCategories, activeCategory: pricingCategories[0]}, () => {
           Axios.get(`${config.apiUrl}&content_type=pricing`).then((res) => {
-            this.setState({pricingItems: res.data.items.map((item) => item.fields), isPricingLoading: false});
+              console.log(res.data);
+              this.setState({pricingItems: res.data.items.map((item) => item.fields), isPricingLoading: false});
           })
         });
       });
     });
   }
+
+
 
   render() {
     return <Layout>
