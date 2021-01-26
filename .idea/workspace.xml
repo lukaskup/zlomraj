@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/cennik.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pricing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/gallery.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/galeria.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/galeria.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/content/gallery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="E:\JetBrains\WebStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -69,7 +69,9 @@
       <workItem from="1609771296499" duration="5596000" />
       <workItem from="1610018383952" duration="4639000" />
       <workItem from="1610274640606" duration="7553000" />
-      <workItem from="1610375578848" duration="1885000" />
+      <workItem from="1610375578848" duration="1981000" />
+      <workItem from="1610448402184" duration="1016000" />
+      <workItem from="1611688373910" duration="3031000" />
     </task>
     <task id="LOCAL-00001" summary="installed material-ui">
       <created>1608567790481</created>
@@ -148,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610278476619</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="pricing on home page done">
+      <created>1610387972516</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610387972516</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +186,7 @@
     <MESSAGE value="gatsby config fix" />
     <MESSAGE value="some contentful api work, added config.js" />
     <MESSAGE value="pricing on index page finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="pricing on index page finished" />
+    <MESSAGE value="pricing on home page done" />
+    <option name="LAST_COMMIT_MESSAGE" value="pricing on home page done" />
   </component>
 </project>

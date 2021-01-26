@@ -14,9 +14,28 @@ h2{
     cursor: pointer;
     overflow: hidden;
     transition: .2s;
+    background-size: cover;
+    background-position: center;
+
     &:hover{
       filter: brightness(1.3);
       transform: scale(1.05);
+    }
+
+    &.photo1{
+      background-image: url("../images/1.jpg");
+    }
+
+    &.photo2{
+      background-image: url("../images/2.jpg");
+    }
+
+    &.photo3{
+      background-image: url("../images/3.jpg");
+    }
+
+    &.photo4{
+      background-image: url("../images/4.jpg");
     }
   }
 }
