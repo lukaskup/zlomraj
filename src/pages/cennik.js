@@ -38,12 +38,12 @@ class PricingPage extends React.Component {
         });
     }
 
-
-
     render() {
         return <Layout>
-            <h2>Cennik</h2>
-            <Pricing isPagination={true} pricingCategories={this.state.pricingCategories} pricingItems={this.state.pricingItems}/>
+            <div className={"container"} style={{'minHeight': 'calc(100vh - 650px)'}}>
+                <h2>Cennik</h2>
+                <Pricing isPagination={true} pricingCategories={this.state.pricingCategories} pricingItems={this.state.pricingItems}/>
+            </div>
         </Layout>
     }
 }

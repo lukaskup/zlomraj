@@ -17,8 +17,6 @@ export default ({data}) => {
         </div>
         <div className={`modal${modalPhoto === 0 ? " hidden" : ""}`} onClick={() => {setModalPhoto(0)}}>
             <div className={`modal-content photo${modalPhoto}`}>
-                <div className={"arrow left"} onClick={() => {setModalPhoto(modalPhoto + 1)}}></div>
-                <div className={"arrow right"}></div>
             </div>
         </div>
     </Layout>

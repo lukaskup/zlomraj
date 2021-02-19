@@ -16,7 +16,10 @@ class IndexPage extends React.Component {
     this.state = {
       pricingCategories: [],
       pricingItems: [],
+      blogPosts: [],
+
       isPricingLoading: false,
+      isBlogPostsLoading: false,
       activeContent: "pricing"
     }
   }
@@ -32,7 +35,6 @@ class IndexPage extends React.Component {
         });
         this.setState({pricingCategories: pricingCategories, activeCategory: pricingCategories[0]}, () => {
           Axios.get(`${config.apiUrl}&content_type=pricing`).then((res) => {
-              console.log(res.data);
               this.setState({pricingItems: res.data.items.map((item) => item.fields), isPricingLoading: false});
           })
         });
@@ -40,7 +42,14 @@ class IndexPage extends React.Component {
     });
   }
 
-
+  handleGetBlogPosts() {
+    this.setState({isBlogPostsLoading: true}, () => {
+      Axios.get(`${config.apiUrl}&content_type=blogPost`).then((res) => {
+        console.log(res.data);
+        this.setState({blogPosts: res.data.items});
+      });
+    });
+  }
 
   render() {
     return <Layout>
@@ -65,7 +74,7 @@ class IndexPage extends React.Component {
             </Grid>
             <Grid item xs={4}>
               <Button className={`button${this.state.activeContent === "blog" ? " active" : ""}`}
-                      onClick={() => this.setState({activeContent: "blog"})}>OGŁOSZENIA</Button>
+                      onClick={() => this.setState({activeContent: "blog"}, () => {this.handleGetBlogPosts()})}>OGŁOSZENIA</Button>
             </Grid>
             <Grid item xs={4}>
               <Button className={`button${this.state.activeContent === "contact" ? " active" : ""}`}
@@ -76,7 +85,7 @@ class IndexPage extends React.Component {
       </div>
       <div className={"container"}>
         {this.state.activeContent === "pricing" ? <Pricing isPagination={true} pricingCategories={this.state.pricingCategories} pricingItems={this.state.pricingItems}/> : (this.state.activeContent === "contact" ? <Contact/> :
-            <Blog isPagination={true}/>)}
+            <Blog isPagination={true} posts={this.state.blogPosts}/>)}
       </div>
     </Layout>
   }
