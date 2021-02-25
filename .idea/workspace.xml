@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d937ca75-68b1-4942-95ec-04405c11efac" name="Default Changelist" comment="some gallery modal work">
+      <change afterPath="$PROJECT_DIR$/src/css/about.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/downloads.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/downloads/ochrona-srodowiska-zlomraj.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/downloads/ochrona-srodowiska-zlomraj.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/dopobrania.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ogloszenia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/onas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cennik.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cennik.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/galeria.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/galeria.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/downloads" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="E:\JetBrains\WebStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -34,9 +39,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\praca\zlecenia\zlomraj\src\downloads" />
+      <recent name="E:\praca\zlecenia\zlomraj\src\pages" />
       <recent name="E:\praca\zlecenia\zlomraj\src\content\gallery" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\praca\zlecenia\zlomraj\src\downloads" />
       <recent name="E:\praca\zlecenia\zlomraj\src\content" />
       <recent name="E:\praca\zlecenia\zlomraj\src\images" />
     </key>
@@ -77,6 +85,9 @@
       <workItem from="1611739791432" duration="44000" />
       <workItem from="1611763369734" duration="253000" />
       <workItem from="1613127402419" duration="3738000" />
+      <workItem from="1613918797748" duration="5167000" />
+      <workItem from="1614162923371" duration="498000" />
+      <workItem from="1614257042061" duration="3310000" />
     </task>
     <task id="LOCAL-00001" summary="installed material-ui">
       <created>1608567790481</created>

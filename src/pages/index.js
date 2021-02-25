@@ -85,7 +85,7 @@ class IndexPage extends React.Component {
       </div>
       <div className={"container"}>
         {this.state.activeContent === "pricing" ? <Pricing isPagination={true} pricingCategories={this.state.pricingCategories} pricingItems={this.state.pricingItems}/> : (this.state.activeContent === "contact" ? <Contact/> :
-            <Blog isPagination={true} posts={this.state.blogPosts}/>)}
+            <Blog isPagination={false} posts={this.state.blogPosts}/>)}
       </div>
     </Layout>
   }

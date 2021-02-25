@@ -7,7 +7,6 @@ import {Grid} from "@material-ui/core";
 const Blog = (props) => {
     return <div className={"blog-container"}>
         {props.posts.map(post => {
-            console.log(post.fields.description);
             return <div className={"post"} key={post.fields.title}>
                 <Grid container>
                     <Grid item xs={2} className={"date"}>
