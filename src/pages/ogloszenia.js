@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 import Axios from "axios";
 import config from "../../config";
 
-class PricingPage extends React.Component {
+class BlogPage extends React.Component {
 
     constructor(props) {
         super(props);
@@ -38,4 +38,4 @@ class PricingPage extends React.Component {
     }
 }
 
-export default PricingPage;
+export default BlogPage;

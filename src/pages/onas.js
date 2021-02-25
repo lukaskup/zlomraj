@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 
 import '../css/about.scss';
 
-class PricingPage extends React.Component {
+class AboutPage extends React.Component {
 
     render() {
         return <Layout>
@@ -15,4 +15,4 @@ class PricingPage extends React.Component {
     }
 }
 
-export default PricingPage;
+export default AboutPage;

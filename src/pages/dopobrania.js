@@ -8,7 +8,7 @@ import {Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid,
 import ochronaImg from "../downloads/ochrona-srodowiska-zlomraj.jpg";
 import ochronaPdf from "../downloads/ochrona-srodowiska-zlomraj.pdf";
 
-class PricingPage extends React.Component {
+class DownloadsPage extends React.Component {
 
     render() {
         let files = [
@@ -74,4 +74,4 @@ class PricingPage extends React.Component {
     }
 }
 
-export default PricingPage;
+export default DownloadsPage;
