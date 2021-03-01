@@ -39,3 +39,30 @@ h2{
     }
   }
 }
+
+.btn{
+  position: absolute;
+  color: black;
+  height: 100%;
+  width: 70px;
+
+  .icon{
+    font-size: 36px;
+    top: calc(50% - 16px);
+    position: absolute;
+    color: white;
+    left: 15px;
+  }
+
+  &.next{
+    right: 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(0,212,255,0) 0%, rgba(0,0,0,0.592874649859944) 100%);
+  }
+
+  &.back{
+    left: 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(0,0,0,0.592874649859944) 0%, rgba(0,212,255,0) 100%);
+  }
+}
